@@ -3,7 +3,6 @@
 /public/storage
 /storage/*.key
 /vendor
-/database
 .idea/
 .env
 .phpunit.result.cache
