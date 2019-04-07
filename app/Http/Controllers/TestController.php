@@ -7,15 +7,15 @@
  */
 
 namespace App\Http\Controllers;
+use App\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
+
 class TestController extends Controller
 {
-        public function index(){
-            dd(Auth::id());
-            $user = Auth::user();
+    public function index(Request $request){
 
-        // 获取当前通过认证的用户 ID...
-            $id = Auth::id();
-            return "hello world!";
+            dd('test');
         }
 }
