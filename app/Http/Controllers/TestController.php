@@ -15,7 +15,24 @@ use Illuminate\Support\Facades\Validator;
 class TestController extends Controller
 {
     public function index(Request $request){
-
-            dd('test');
+        $data = [
+            'name'=>"sherlock_l",
+            'age'=>18,
+            'sex'=>"男",
+        ];
+        return view('testVue');
         }
+
+    public function info(Request $request){
+        $data = [
+            'name'=>"sherlock_l",
+            'age'=>18,
+            'sex'=>"男",
+        ];
+        return ['data'=>$data];
+    }
+
+    public function save(Request $request){
+        return ['data'=>$request->all()];
+    }
 }

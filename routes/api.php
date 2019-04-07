@@ -27,4 +27,7 @@ Route::group(['middleware' => 'auth:api'], function(){
 });
 
 //机器对机器的认证
-Route::get('/test/index', 'TestController@index')->middleware('client');
+//Route::get('/test/index', 'TestController@index')->middleware('client');
+Route::get('/test/index', 'TestController@index');
+Route::get('/test/info', 'TestController@info');
+Route::post('/test/save', 'TestController@save');
