@@ -20,6 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script crossorigin="anonymous" integrity="sha384-MJHj8BpV8RPgL3fJEHKQGoo2PKJf1CLlUXlTlOPN/KgR2Mt8Vs/BpcBYPp1eBjts" src="https://lib.baomitu.com/vue/2.6.0/vue.js"></script>
     <script src="https://cdn.bootcss.com/vue-resource/1.5.1/vue-resource.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
 <div id="app">
