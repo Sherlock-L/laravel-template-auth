@@ -16,14 +16,16 @@ class TestController extends Controller
 {
     public function index(Request $request){
         echo "初始: ".memory_get_usage()." 字节 <br>:";
-        $array = range(1, 1000000);
+        $array = range(1, 100000);
         $a  = $array;
         echo "赋值a时: ".memory_get_usage()." 字节  <br>";
-        function dummy($array) {}
+        function dummy($array) {
+            echo "循环时内存: ".memory_get_usage()." 字节  <br>";
+        }
 
         $i = 0;
         $start = microtime(true);
-        while($i++ < 100) {
+        while($i++ < 1) {
             dummy($array);
         }
         printf("Used %sS <br>", microtime(true) - $start);
